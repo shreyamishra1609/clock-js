@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title> clock </title>
+        <link rel="stylesheet" type="text/css" href="clock.css">
+    </head>
+
+
+    <body>
+        <div id="content">
+        <h1> <em> CLOCK BY JAVASCRIPT </em></h1>
+        <button onclick="clearInterval(time)" class="butn">Click to stop the clock </button>
+        <button onclick="func()" class="butn">Click to start the clock </button>
+        
+        <p id="start"> </p>
+        </div>
+
+        <script type="text/javascript">
+            function func(){
+            window.time=setInterval(timing,1000);
+            function timing(){
+            var date= new Date();  
+            var shreya=date.toLocaleTimeString();
+            document.getElementById("start").innerHTML=shreya;
+            }}
+            </script>
+
+       
+    </body>
+</html>
